@@ -10,4 +10,12 @@
 ![img.png](img.png)
 Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 
-# 비지니스 요구사항과 설계
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+
+# 단축키
+- alt + insert = generate
+- alt + enter = 자동수정
+- ctrl + shift + enter = 자동완성시 세미클론을 포함하여 출려됨
