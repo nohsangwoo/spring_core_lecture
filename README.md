@@ -12,16 +12,20 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 
 ![img_2.png](img_2.png)
 
-![img_3.png](img_3.png)ㅔ
+![img_3.png](img_3.png)
 
 
 # 단축키
 - alt + insert = generate
 - alt + enter = 자동수정
 - ctrl + shift + enter = 자동완성시 세미클론을 포함하여 출려됨
-
+- CTRL + shift + t = 테스트 코드 자동완성
 
 # 테스트 코드 짜는방법
 - MemeberServiceTest
 - 
 ![img_4.png](img_4.png)
+
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
