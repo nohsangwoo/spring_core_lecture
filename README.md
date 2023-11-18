@@ -12,7 +12,7 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 
 ![img_2.png](img_2.png)
 
-![img_3.png](img_3.png)
+![img_3.png](img_3.png)ㅔ
 
 
 # 단축키
@@ -23,3 +23,5 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 
 # 테스트 코드 짜는방법
 - MemeberServiceTest
+- 
+![img_4.png](img_4.png)
