@@ -40,3 +40,5 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 ![img_9.png](img_9.png)
 
 ![img_10.png](img_10.png)
+
+# appConfig.xml 설정 방법 및 사용방법 (XmlAppContext테스트 파일로 사용방법 숙지)
