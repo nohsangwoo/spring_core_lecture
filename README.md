@@ -29,3 +29,9 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 ![img_5.png](img_5.png)
 
 ![img_6.png](img_6.png)
+
+# Ioc, DI
+![img_7.png](img_7.png)
+
+
+![img_8.png](img_8.png)
