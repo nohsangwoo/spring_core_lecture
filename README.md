@@ -21,6 +21,7 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - ctrl + shift + enter = 자동완성시 세미클론을 포함하여 출려됨
 - CTRL + shift + t = 테스트 코드 자동완성
 - ctrl + e = recent file
+- iter for문 자동생성
 # 테스트 코드 짜는방법
 - MemeberServiceTest
 - 
