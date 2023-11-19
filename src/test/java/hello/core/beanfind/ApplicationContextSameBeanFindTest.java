@@ -49,7 +49,6 @@ public class ApplicationContextSameBeanFindTest {
     @Configuration
     static class SameBeanConfig {
 
-
         @Bean
         public MemberRepository memberRepository1() {
             return new MemoryMemberRepository();
@@ -59,9 +58,5 @@ public class ApplicationContextSameBeanFindTest {
         public MemberRepository memberRepository2() {
             return new MemoryMemberRepository();
         }
-
     }
-
-
-
 }
