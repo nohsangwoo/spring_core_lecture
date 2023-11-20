@@ -22,6 +22,7 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - CTRL + shift + t = 테스트 코드 자동완성
 - ctrl + e = recent file
 - iter for문 자동생성
+- ctrl + shift + t(클래스명을 타겟으로 잡은상태에서) = 테스트 자동생성
 # 테스트 코드 짜는방법
 - MemeberServiceTest
 - 
@@ -46,3 +47,6 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 
 # bean meta infomation
 ![img_11.png](img_11.png)
+
+
+# 스프링빈은 항상 무상태로 설계해야한다.
