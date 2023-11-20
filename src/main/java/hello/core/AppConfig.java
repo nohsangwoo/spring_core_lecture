@@ -19,21 +19,28 @@ public class AppConfig {
     // @Bean spring container라는곳에 등록됨
     @Bean
     public MemberService memberService(){
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
+
+//    기본적으로 싱글톤이 적용되어서 같은 AppConfig 클래스에서 참조시 적용되겠지만
+    // 싱글톤을 해제하고싶을때는 static을 붙이면 됨
     @Bean
-    public static MemberRepository memberRepository() {
+    public MemberRepository memberRepository() {
+        System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
     public OrderService orderService(){
+        System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
     @Bean
     public DiscountPolicy discountPolicy(){
+        System.out.println("call AppConfig.discountPolicy");
 //        return new FixDiscountPolicy();
         return new RateDiscountPolocy();
     }
