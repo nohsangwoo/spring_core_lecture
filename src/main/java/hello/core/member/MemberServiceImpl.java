@@ -3,6 +3,7 @@ package hello.core.member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+//@Component("service") // 빈 중복 이름 등록 테스트
 @Component
 public class MemberServiceImpl implements MemberService {
 

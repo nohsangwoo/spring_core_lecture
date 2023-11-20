@@ -6,6 +6,7 @@ import hello.core.member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+//@Component("service")  // 빈 중복 이름 등록 테스트
 @Component
 public class OrderServiceImpl implements OrderService{
 
