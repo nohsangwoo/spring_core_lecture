@@ -23,6 +23,9 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - ctrl + e = recent file
 - iter for문 자동생성
 - ctrl + shift + t(클래스명을 타겟으로 잡은상태에서) = 테스트 자동생성
+- sout 시리즈 = 출력관련
+- psvm = main() method declaration
+- 
 # 테스트 코드 짜는방법
 - MemeberServiceTest
 - 
@@ -88,3 +91,13 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 생성자 주입을 권장하니 생성자 주입을 사용하자(사이드 이펙트 관리차원에서 여러 통계의 결과)
 
 # 의존 관계 주입은 스프링 컨테이터가 관리하는 스프링 빈이어야지만 동작한다(당연한 이야기)
+
+
+# lombok 설치 및 사용세팅 (검색하면 많이 나옴)
+
+# lombok을 이용하는 이유
+- getter, setter등을 자동으로 만들어준다.
+- java단에서 귀찮은것들을 자동으로 설정해줌.
+- @ToString은 자동으로 모는 멤버 변수들의 내용을 출력해주는 것
+- @RequiredArgsConstructor은 생성자 주입을 자동으로 만들어줌.
+- 등등...
