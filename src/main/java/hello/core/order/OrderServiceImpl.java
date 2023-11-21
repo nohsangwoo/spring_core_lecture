@@ -10,14 +10,27 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService{
 
-    private final MemberRepository memberRepository;
 
+    private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
+
+//    @Autowired
+//    public void init(MemberRepository memberRepository, DiscountPolicy discountPolicy){
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy = discountPolicy;
+//    }
+
+
 
     // AutoConfig와 관계가 있음. (생성자 위에 설정해야함)
     // 자동 의존관계 주입
+    // @Component로 설정된 MemoryMemberRepository와 RateDiscountPolocy를 자동으로 인식해서 주입해준다.
+    // 만약 생성자가 한개라면 @Autowired를 생략 할 수 있다.
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        System.out.println("OrderServiceImpl. memberRepository: " + memberRepository);
+        System.out.println("OrderServiceImpl. discountPolicy: " + discountPolicy);
+
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
@@ -28,6 +41,8 @@ public class OrderServiceImpl implements OrderService{
         int discountPrice = discountPolicy.discount(member, itemPrice);
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+
 
     //테스트 용도
     public MemberRepository getMemberRepository() {

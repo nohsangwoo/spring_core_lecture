@@ -29,4 +29,14 @@ public class OrderServiceTest {
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
+
+
+    // when use Field Injection way
+    // 실행객체에 필요한 내용을 주입할 수있는 방법이 없기때문에 NullPointException 발생.
+    // 결국 setter를 따로 만들어야 테스트를 위한 DI 문제를 해결할 수있다.
+//    @Test
+//    void fieldInjectionTest() {
+//        OrderServiceImpl orderService = new OrderServiceImpl();
+//        orderService.createOrder(1L,"memberA",1000);
+//    }
 }
