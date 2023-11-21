@@ -112,3 +112,14 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 3. @Primary 사용
 - @Primary로 우선권을 지정하여 중복시 우선선택되게 설정할 수 있다.
 ![img_23.png](img_23.png)
+
+
+# custom annotation
+1. 설정하는 곳
+- MainDiscountPolicy annotation file
+![img_25.png](img_25.png)
+- RateDiscountPolicy class
+![img_26.png](img_26.png)
+2. 사용하는 곳
+- OrderServiceImpl
+![img_24.png](img_24.png)
