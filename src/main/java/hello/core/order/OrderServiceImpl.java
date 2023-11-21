@@ -5,12 +5,13 @@ import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 //@Component("service")  // 빈 중복 이름 등록 테스트
 @Component
-@RequiredArgsConstructor
-public class OrderServiceImpl implements OrderService{
+//@RequiredArgsConstructor
+public class OrderServiceImpl implements OrderService {
 
 
     // final은 생성자 주입또는 초기 값설정으로만 값을 설정할 수 있다.
@@ -18,11 +19,11 @@ public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-    // @RequiredArgsConstructor에 의해 생성자 주입이 대체됨
-//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-//        this.memberRepository = memberRepository;
-//        this.discountPolicy = discountPolicy;
-//    }
+    // @RequiredArgsConstructor에 의해 생성자 주입이 대체될 수 있음
+    public OrderServiceImpl(MemberRepository memberRepository,@Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {

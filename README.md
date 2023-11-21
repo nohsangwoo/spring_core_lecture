@@ -101,3 +101,14 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - @ToString은 자동으로 모는 멤버 변수들의 내용을 출력해주는 것
 - @RequiredArgsConstructor은 생성자 주입을 자동으로 만들어줌.
 - 등등...
+
+# 생성자 주입 빈이 중복으로 등록됐을때 해결방법
+1. Autowired 필드명 매칭
+![img_19.png](img_19.png)
+2. @Component 등록시 @Qualifier로 구분이름을 지정하고 주입시 @Qualifier을 사용하여 빈 이름 매칭
+![img_20.png](img_20.png)
+![img_21.png](img_21.png)
+![img_22.png](img_22.png)
+3. @Primary 사용
+- @Primary로 우선권을 지정하여 중복시 우선선택되게 설정할 수 있다.
+![img_23.png](img_23.png)

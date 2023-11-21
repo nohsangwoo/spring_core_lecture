@@ -2,6 +2,7 @@ package hello.core.discount;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 
@@ -9,7 +10,9 @@ import org.springframework.stereotype.Component;
 // 이때 DiscountPolicy를 구현한 클래스중 한개만 선택해서 @Component로 지정해야한다.
 // 구현클래스가 여러개고 이중으로 @Component를 등록한다면 아래와 비슷한 에러를 출력한다.
 // org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderServiceImpl' defined in file [
-// @Component
+// 다양한 방법으로 중복 문제를 해결할 수 있다.
+ @Component
+ @Qualifier("fixDiscountPolicy")
 public class FixDiscountPolicy implements DiscountPolicy{
 
     @Override

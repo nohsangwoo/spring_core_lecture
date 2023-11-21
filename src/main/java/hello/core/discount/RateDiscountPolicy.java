@@ -2,10 +2,14 @@ package hello.core.discount;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RateDiscountPolocy implements DiscountPolicy {
+@Qualifier("mainDiscountPolicy")
+@Primary // 중복 주입시 우선권을 가져서 이 클래스가 가장 높은 우선순위로 주입되게 설정.
+public class RateDiscountPolicy implements DiscountPolicy {
 
     private int discountPercent = 10;
     @Override
