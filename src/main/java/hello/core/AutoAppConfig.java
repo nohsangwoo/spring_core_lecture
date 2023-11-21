@@ -22,8 +22,10 @@ import org.springframework.context.annotation.FilterType;
 
 )
 public class AutoAppConfig {
-    @Bean(name =  "memoryMemberRepository")
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+
+//    충돌 테스트를 위한 임시 빈
+//    @Bean(name =  "memoryMemberRepository")
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
 }
