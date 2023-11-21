@@ -123,3 +123,6 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 2. 사용하는 곳
 - OrderServiceImpl
 ![img_24.png](img_24.png)
+
+
+# 조회한 빈이 모두 필요한 경우
