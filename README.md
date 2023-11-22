@@ -169,3 +169,20 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 ![img_33.png](img_33.png)
 - 사용방법(그냥 빈 등록하면 끝)
 ![img_34.png](img_34.png)
+
+
+# 빈 스코프란?
+![img_35.png](img_35.png)
+
+# 싱글톤 빈 요청
+![img_36.png](img_36.png)
+
+# 프로토 타입 빈 요청
+- 한번 사용되고 버려지는 빈
+- 매번 새로운 빈을 만들어서 사용한다(싱글톤이 유지안됨)
+![img_37.png](img_37.png)
+![img_38.png](img_38.png)
+- 사용법 (호출되는 클래스의 종류가 다른것을 확인 할 수 있다.)
+- close또한 빈이 관리하는것이 아니라 작동안하기때문에 destroy기능이 있다면 메소드를 직접 호출해줘야한다.
+![img_41.png](img_41.png)
+![img_40.png](img_40.png)
