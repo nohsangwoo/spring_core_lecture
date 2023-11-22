@@ -177,6 +177,7 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 # 싱글톤 빈 요청
 ![img_36.png](img_36.png)
 
+
 # 프로토 타입 빈 요청
 - 한번 사용되고 버려지는 빈
 - 매번 새로운 빈을 만들어서 사용한다(싱글톤이 유지안됨)
@@ -201,3 +202,14 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - JSR-330 Provider(330이 맞음.)
 ![img_44.png](img_44.png)
 - ![img_45.png](img_45.png)
+
+# 웹 스코프
+![img_46.png](img_46.png)
+
+- request 스코프
+![img_47.png](img_47.png)
+- web환경에서 동작테스트를 위한 세팅
+![img_48.png](img_48.png)
+- MyLogger예제
+![img_49.png](img_49.png)
+![img_50.png](img_50.png)
