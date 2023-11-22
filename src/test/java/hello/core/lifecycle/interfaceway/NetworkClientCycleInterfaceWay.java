@@ -1,13 +1,13 @@
-package hello.core.lifecycle;
+package hello.core.lifecycle.interfaceway;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class NetworkClientForInterfaceLifeCycle implements InitializingBean, DisposableBean {
+public class NetworkClientCycleInterfaceWay implements InitializingBean, DisposableBean {
 
     private String url;
 
-    public NetworkClientForInterfaceLifeCycle() {
+    public NetworkClientCycleInterfaceWay() {
         System.out.println("생성자 호출, url = " + url);
     }
 
