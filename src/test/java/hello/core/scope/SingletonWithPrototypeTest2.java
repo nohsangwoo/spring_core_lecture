@@ -10,9 +10,11 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.inject.Provider;
 
-public class SingletonWithPrototypeTest1 {
 
+// JSR-303 Provider example
+public class SingletonWithPrototypeTest2 {
 
     @Test
     void prototypeFind(){
@@ -49,23 +51,15 @@ public class SingletonWithPrototypeTest1 {
     @Scope("singleton")
     @Component
     static class ClientBean {
-//        private final PrototypeBean prototypeBean; // 생성시점에 주입됨. x01
-
 
         @Autowired
-        private ObjectProvider<PrototypeBean> prototypeBeanProvider;
-
-//        @Autowired
-//        public ClientBean(PrototypeBean prototypeBean) {
-//            this.prototypeBean = prototypeBean;
-//        }
+        private Provider<PrototypeBean> prototypeBeanProvider;
 
         public int logic() {
-            PrototypeBean prototypeBean = prototypeBeanProvider.getObject();
+            PrototypeBean prototypeBean = prototypeBeanProvider.get();
             prototypeBean.addCount();
             int count = prototypeBean.getCount();
             return count;
-
         }
     }
 

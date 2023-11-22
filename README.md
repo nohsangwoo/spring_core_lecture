@@ -187,3 +187,17 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 ![img_41.png](img_41.png)
 ![img_40.png](img_40.png)
 ![img_42.png](img_42.png)
+
+
+# 프로토 타입 빈 - 싱글톤 빈과 함께 사용시 Provider로 문제 해결
+싱글톤 빈과 프로토 타입 빈을 함께 사용할때, 어떻게 하면 사용할 대 마다 항상 새로운 프로토 타입 빈을 생성할 수 있을까?
+- 근데 굳이 사용할 일이 없다 대부분의 경우 싱글톤으로 해결 가능한 일이 대부분.
+
+- 지정한 빈을 컨테이너에서 대신 찾아주는 DL 서비스를 제공하는것이
+'ObjectProvider'
+![img_43.png](img_43.png)
+
+
+- JSR-330 Provider(330이 맞음.)
+![img_44.png](img_44.png)
+- ![img_45.png](img_45.png)
