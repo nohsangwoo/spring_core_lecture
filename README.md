@@ -166,7 +166,7 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 # 빈 라이프 사이클 - annotation 등록 방법(권장)
 - 이방법을 주로 사용하는 것 을 권장한다.
 - @PostConstruct, @PreDestroy 등록 방법
-![img_33.png](img_33.png)
+![img_33.png](img_33.png)[
 - 사용방법(그냥 빈 등록하면 끝)
 ![img_34.png](img_34.png)
 
@@ -186,3 +186,4 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - close또한 빈이 관리하는것이 아니라 작동안하기때문에 destroy기능이 있다면 메소드를 직접 호출해줘야한다.
 ![img_41.png](img_41.png)
 ![img_40.png](img_40.png)
+![img_42.png](img_42.png)
