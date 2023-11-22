@@ -1,16 +1,10 @@
-package hello.core.lifecycle;
+package hello.core.lifecycle.annotationway;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-public class NetworkClient {
+public class NetworkClientForAnnotationWay {
 
     private String url;
 
-    public NetworkClient() {
+    public NetworkClientForAnnotationWay() {
         System.out.println("생성자 호출, url = " + url);
     }
 
@@ -34,15 +28,14 @@ public class NetworkClient {
 
 
     // 의존관계 주입이 끝나면 호출됨
-    @PostConstruct
     public void init() {
         System.out.println("NetworkClient.init");
         connect();
         call("초기화 연결 메시지");
     }
 
+
     // 생명주기가 끝날때 호출됨
-    @PreDestroy
     public void close() {
         System.out.println("NetworkClient.close");
         disconnect();

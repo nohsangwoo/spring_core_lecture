@@ -150,14 +150,22 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 ![img_28.png](img_28.png)
 
 
-# 인터페이스 (InitializingBean, DisposableBean)
+# 빈 라이프 사이클 - 인터페이스 (InitializingBean, DisposableBean) 등록 방법
 ![img_29.png](img_29.png)
 
 
-# 빈등록 초기화, 소멸 메소드
+# 빈 라이프 사이클  - 빈등록 초기화, 소멸 메소드 등록 방법
 - 메소드 등록
 ![img_30.png](img_30.png)
 - 초기화, 소멸 메소드 빈에 등록방법
 ![img_31.png](img_31.png)
 - close와 shutdown이라는 메소드명이 있으면 자동으로 destoryMethod로 등록됨(@Bean등록시)
 ![img_32.png](img_32.png)
+
+
+# 빈 라이프 사이클 - annotation 등록 방법(권장)
+- 이방법을 주로 사용하는 것 을 권장한다.
+- @PostConstruct, @PreDestroy 등록 방법
+![img_33.png](img_33.png)
+- 사용방법(그냥 빈 등록하면 끝)
+![img_34.png](img_34.png)
