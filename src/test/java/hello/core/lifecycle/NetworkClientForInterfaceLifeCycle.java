@@ -3,11 +3,11 @@ package hello.core.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class NetworkClient implements InitializingBean, DisposableBean {
+public class NetworkClientForInterfaceLifeCycle implements InitializingBean, DisposableBean {
 
     private String url;
 
-    public NetworkClient() {
+    public NetworkClientForInterfaceLifeCycle() {
         System.out.println("생성자 호출, url = " + url);
     }
 

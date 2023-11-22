@@ -148,3 +148,7 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 즉 유지보수 관점에서도 좋으니 의도대로 사용하자.
 
 ![img_28.png](img_28.png)
+
+
+# 인터페이스 (InitializingBean, DisposableBean)
+![img_29.png](img_29.png)
