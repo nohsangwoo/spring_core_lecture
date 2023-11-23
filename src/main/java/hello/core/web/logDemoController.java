@@ -14,16 +14,17 @@ import javax.servlet.http.HttpServletRequest;
 public class logDemoController {
 
     private final LogDemoService logDemoService;
-    private final ObjectProvider<MyLogger> myLoggerProvider;
+    private final MyLogger myLogger;
 
 
     // api endpoint: log-demo
     @RequestMapping("log-demo")
     @ResponseBody
     public String logDemo(HttpServletRequest request) throws InterruptedException {
-        MyLogger myLogger = myLoggerProvider.getObject();
         String requestURL = request.getRequestURI().toString();
         myLogger.setRequestURL(requestURL);
+
+        System.out.println("myLogger = " + myLogger.getClass());
 
         myLogger.log("controller test");
 

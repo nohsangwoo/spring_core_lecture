@@ -213,3 +213,11 @@ Build and Run 부분을 IntelliJ IDEA로 변경 (속도가 더 빠름)
 - MyLogger예제
 ![img_49.png](img_49.png)
 ![img_50.png](img_50.png)
+
+- 스프링에의해서 임시로 주입되는 myLogger클래스(예제용)
+![img_52.png](img_52.png)
+![img_51.png](img_51.png)
+
+
+# 다음코스
+![img_53.png](img_53.png)
